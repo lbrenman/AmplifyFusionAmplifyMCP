@@ -31,6 +31,7 @@ Prerequisites:
 
 Steps to install:
 * Export project zip file and import in your Amplify Fusion tenant
+* Create and set an Environment property, AMPLIFY_APICENTRAL_BASE_URL to https://apicentral.axway.com, https://central.eu-fr.axway.com or https://central.ap-sg.axway.com depending on your region
 * Go to connector override in Manager and enter you credentials for the connectors
 * Optionally set your security (eg. api key)
 * Activate your MCP Server and get the URL
