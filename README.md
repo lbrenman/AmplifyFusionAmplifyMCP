@@ -1,10 +1,10 @@
 # Amplify Fusion Amplify MCP
 
-An MCP Server implemented in Amplify Fusion for interacting with Amplify Central and Engage.
+An MCP Server implemented in [Amplify Fusion](https://docs.axway.com/bundle/amplify_integration/page/docs/index.html) for interacting with [Amplify Central and Engage](https://docs.axway.com/category/platform).
 
 Supported use cases include:
-* List/Approve pending Amplify Marketplace product subscription requests. [Demo video](https://youtu.be/S9oTX9gWYmw)
-* List/Approve pending Amplify Marketplace application registration requests
+* List/Approve pending Amplify Marketplace product subscription request. [Demo video](https://youtu.be/S9oTX9gWYmw)
+* List/Approve pending Amplify Marketplace application registration request
 * Retrieve API Metrics for analysis
 * List Marketplace products
 * Create/Update Marketplace product documentation. [Demo video](https://youtu.be/HFuLi2XcSKQ)
@@ -12,14 +12,20 @@ Supported use cases include:
 
 ## Current MCP Server Tools
 
-* **GetAmplifyMarketplacePendingSubscriptions** - Get Amplify marketplace pending subscription requests
-* **UpdateAmplifyMarketplacePendingSubscriptions** - Updated Amplify marketplace pending subscription requests to approved or rejected
+* **GetAmplifyMarketplacePendingProductSubscriptions** - Get Amplify marketplace pending subscription requests
+* **UpdateAmplifyMarketplacePendingProductSubscription** - Updated Amplify marketplace pending subscription request to approved or rejected
+
 * **GetAmplifyMarketplacePendingApplicationRegistrations** - Get Amplify marketplace pending application registration requests
-* **UpdateAmplifyMarketplacePendingApplicationRegistrations** - Updated Amplify marketplace pending application registration requests to approved or rejected
-* **GetAPIMetrics**	- Get Engage Business Insights (API Metrics) by duration
-* **GetMarketplaceProducts** - Get a list of your marketplace products
-* **UpdateProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
-* **UpdateProductIcon** - Update product icon. Uses OpenAI image generation which requires organization validation
+* **UpdateAmplifyMarketplacePendingApplicationRegistration** - Updated Amplify marketplace pending application registration request to approved or rejected
+
+* **GetAmplifyAPIMetrics**	- Get Engage Business Insights (API Metrics) by duration
+
+* **GetAmplifyMarketplaceProducts** - Get a list of your marketplace products
+* **GetAmplifyMarketplaceProductDetails** - Get Amplify Marketplace product details by product name. Used by UpdateAmplifyMarketplaceProductDocumentation to create documentation
+* **UpdateAmplifyMarketplaceProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
+* **UpdateAmplifyMarketplaceProductIcon** - Update product icon. Uses OpenAI API image generation which requires OpenAI API organization validation
+
+* **WhatCanFusionAmplifyMCPServerDo** - What can Fusion Amplify MCP Server do. What capabilities and features does this MCP have
 
 ## Setup
 
