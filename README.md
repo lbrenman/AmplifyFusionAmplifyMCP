@@ -24,6 +24,7 @@ Supported use cases include:
 * **GetAmplifyMarketplaceProductDetails** - Get Amplify Marketplace product details by product name. Used by UpdateAmplifyMarketplaceProductDocumentation to create documentation
 * **UpdateAmplifyMarketplaceProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
 * **UpdateAmplifyMarketplaceProductIcon** - Update product icon. Uses OpenAI API image generation which requires OpenAI API organization validation
+* **ActivateAmplifyMarketplaceProduct** - Activate an amplify marketplace product based on product name and release type. Use product name from GetAmplifyMarketplaceProducts tool. Release type is major, minor or patch. Default is patch
 
 * **WhatCanFusionAmplifyMCPServerDo** - What can Fusion Amplify MCP Server do. What capabilities and features does this MCP have
 
