@@ -12,14 +12,14 @@ Supported use cases include:
 
 ## Current MCP Server Tools
 
-* *GetAmplifyMarketplacePendingSubscriptions* - Get Amplify marketplace pending subscription requests
-* *UpdateAmplifyMarketplacePendingSubscriptions* - Updated Amplify marketplace pending subscription requests to approved or rejected
-* *GetAmplifyMarketplacePendingApplicationRegistrations* - Get Amplify marketplace pending application registration requests
-* *UpdateAmplifyMarketplacePendingApplicationRegistrations* - Updated Amplify marketplace pending application registration requests to approved or rejected
-* *GetAPIMetrics*	- Get Engage Business Insights (API Metrics) by duration
-* *GetMarketplaceProducts* - Get a list of your marketplace products
-* *UpdateProductDocumentation* - Update product documentation. Use product name and markdown contents to update the product
-* *UpdateProductIcon* - Update product icon. Uses OpenAI image generation which requires organization validation
+* **GetAmplifyMarketplacePendingSubscriptions** - Get Amplify marketplace pending subscription requests
+* **UpdateAmplifyMarketplacePendingSubscriptions** - Updated Amplify marketplace pending subscription requests to approved or rejected
+* **GetAmplifyMarketplacePendingApplicationRegistrations** - Get Amplify marketplace pending application registration requests
+* **UpdateAmplifyMarketplacePendingApplicationRegistrations** - Updated Amplify marketplace pending application registration requests to approved or rejected
+* **GetAPIMetrics**	- Get Engage Business Insights (API Metrics) by duration
+* **GetMarketplaceProducts** - Get a list of your marketplace products
+* **UpdateProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
+* **UpdateProductIcon** - Update product icon. Uses OpenAI image generation which requires organization validation
 
 ## Setup
 
