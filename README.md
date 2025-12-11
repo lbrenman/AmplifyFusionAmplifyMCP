@@ -11,22 +11,25 @@ Supported use cases include:
 * Create/Update Marketplace product icon
 
 ## Current MCP Server Tools
-
-* **GetAmplifyMarketplacePendingProductSubscriptions** - Get Amplify marketplace pending subscription requests
-* **UpdateAmplifyMarketplacePendingProductSubscription** - Updated Amplify marketplace pending subscription request to approved or rejected
-
-* **GetAmplifyMarketplacePendingApplicationRegistrations** - Get Amplify marketplace pending application registration requests
-* **UpdateAmplifyMarketplacePendingApplicationRegistration** - Updated Amplify marketplace pending application registration request to approved or rejected
-
-* **GetAmplifyAPIMetrics**	- Get Engage Business Insights (API Metrics) by duration
-
-* **GetAmplifyMarketplaceProducts** - Get a list of your marketplace products
-* **GetAmplifyMarketplaceProductDetails** - Get Amplify Marketplace product details by product name. Used by UpdateAmplifyMarketplaceProductDocumentation to create documentation
-* **UpdateAmplifyMarketplaceProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
-* **UpdateAmplifyMarketplaceProductIcon** - Update product icon. Uses OpenAI API image generation which requires OpenAI API organization validation
-* **ActivateAmplifyMarketplaceProduct** - Activate an amplify marketplace product based on product name and release type. Use product name from GetAmplifyMarketplaceProducts tool. Release type is major, minor or patch. Default is patch
-
-* **WhatCanFusionAmplifyMCPServerDo** - What can Fusion Amplify MCP Server do. What capabilities and features does this MCP have
+* General
+  * **WhatCanFusionAmplifyMCPServerDo** - What can Fusion Amplify MCP Server do. What capabilities and features does this MCP have
+* Product Subscription/Application Registration Request Tools
+  * **GetAmplifyMarketplacePendingProductSubscriptions** - Get Amplify marketplace pending subscription requests
+  * **UpdateAmplifyMarketplacePendingProductSubscription** - Updated Amplify marketplace pending subscription request to approved or rejected
+  * **GetAmplifyMarketplacePendingApplicationRegistrations** - Get Amplify marketplace pending application registration requests
+  * **UpdateAmplifyMarketplacePendingApplicationRegistration** - Updated Amplify marketplace pending application registration request to approved or rejected
+* Product Tools
+  * **GetAmplifyMarketplaceProducts** - Get a list of your marketplace products
+  * **GetAmplifyMarketplaceProductDetails** - Get Amplify Marketplace product details by product name. Used by UpdateAmplifyMarketplaceProductDocumentation to create documentation
+  * **UpdateAmplifyMarketplaceProductDocumentation** - Update product documentation. Use product name and markdown contents to update the product
+  * **UpdateAmplifyMarketplaceProductIcon** - Update product icon. Uses OpenAI API image generation which requires OpenAI API organization validation
+  * **ActivateAmplifyMarketplaceProduct** - Activate an amplify marketplace product based on product name and release type. Use product name from GetAmplifyMarketplaceProducts tool. Release type is major, minor or patch. Default is patch
+* API Tools
+  * **GetAmplifyAPIMetrics**	- Get Engage Business Insights (API Metrics) by duration
+  * **LintingResultsByGrade** - Provides linting/design compliance results grouped by across all the APIs. Just the grade numbers are provided
+  * **ListAPIsForDesignLintingGrade** - Retrieves a list of all the apis and their linting/design compliance results for a specific design linting grade
+  * **APIDetailedLintingResults** - Retrieves the detailed lintingdesign compliance results for an API providing the API ID
+  * **GetAPISpecificationForAPI** - 	Retrieves the Open API/Swagger Specification for a specific API providing the API ID
 
 ## Setup
 
