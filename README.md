@@ -160,11 +160,9 @@ Steps to install:
 
 | Prompt | Tool Used |
 |--------|-----------|
-| "Get my amplify overview metrics" | `GetAmplifyOverviewMetrics` |
-| "GetAmplifyOverviewMetrics" | `GetAmplifyOverviewMetrics` |
-| "Get amplify overview metrics" | `GetAmplifyOverviewMetrics` |
 | "Get API performance metrics for the last 6 months" | `GetAmplifyAPIMetrics` |
 | "Get my API performance metrics" | `GetAmplifyAPIMetrics` |
+| "Compare my API metrics from last week to last year" | `GetAmplifyAPIMetrics` |
 
 ---
 
