@@ -1,6 +1,6 @@
 # Amplify Fusion Amplify MCP
 
-An MCP Server implemented in [Amplify Fusion](https://docs.axway.com/bundle/amplify_integration/page/docs/index.html) for interacting with [Amplify Central and Engage](https://docs.axway.com/category/platform).
+An MCP Server for interacting with [Amplify Central and Engage](https://docs.axway.com/category/platform) implemented in [Amplify Fusion](https://docs.axway.com/bundle/amplify_integration/page/docs/index.html).
 
 Supported use cases include:
 * List/Approve pending Amplify Marketplace product subscription request. [Demo video](https://youtu.be/S9oTX9gWYmw)
