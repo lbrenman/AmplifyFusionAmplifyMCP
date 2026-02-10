@@ -47,10 +47,23 @@ Prerequisites:
 Steps to install:
 * Export project zip file and import in your Amplify Fusion tenant
 * Create and set an Environment property, AMPLIFY_APICENTRAL_BASE_URL to https://apicentral.axway.com, https://central.eu-fr.axway.com or https://central.ap-sg.axway.com depending on your region
-* Go to connector override in Manager and enter you credentials for the connectors
-* Optionally set your security (eg. api key)
+* Go to connector override in Manager and enter you credentials for the connectors or edit the connectors in your imported project
+* Optionally set your MCP Server security (eg. api key)
 * Activate your MCP Server and get the URL
-* Configure your LLM to use the MCP Server URL
+* Configure your LLM (e.g. Claude Desktop)) to use the MCP Server URL
+
+### Connector Settings
+
+![Imgur](https://i.imgur.com/kZ7zRDA.png)
+![Imgur](https://i.imgur.com/1XTOQyV.png)
+![Imgur](https://i.imgur.com/S1eVwro.png)
+![Imgur](https://i.imgur.com/OD7t7Sy.png)
+![Imgur](https://i.imgur.com/RG3xL7V.png)
+![Imgur](https://i.imgur.com/KSO6lwO.png)
+![Imgur](https://i.imgur.com/JyxO8Eb.png)
+![Imgur](https://i.imgur.com/BuOHhp0.png)
+![Imgur](https://i.imgur.com/lMXSyhK.png)
+
 
 ## Prompts
 
