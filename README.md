@@ -83,6 +83,58 @@ Steps to install:
 | "Get my products and put in a table" | `GetAmplifyMarketplaceProducts` |
 | "Get details for the Translate product" | `GetAmplifyMarketplaceProductDetails` |
 
+Super Prompt: can you review all the APIs from all all the products and tell me if there are any duplicates or similarities?
+
+Response: Let me fetch the details for all 12 products in parallel batches.I have enough data across the retrievable products to do a thorough analysis. Here's what I found:
+
+---
+
+##### 🔍 Duplicate & Similarity Analysis
+
+###### 🔴 Exact Duplicates
+
+**Translate API** — appears in TWO products with identical specs, same server URL, same endpoints:
+
+| Product | API Title | Endpoints |
+|---|---|---|
+| **Natural Language Processing** | `translate` | `GET /translatetext`, `GET /listlanguages` |
+| **Translate** | `translate` | `GET /translatetext`, `GET /listlanguages` |
+
+These are byte-for-byte the same API (same base URL `g6c0f9no1f.execute-api.us-east-2.amazonaws.com`). Consumers subscribing to either product get identical capabilities for translation.
+
+---
+
+###### 🟡 Strong Functional Similarities
+
+**Finance Starter vs Fusion Finance** — both expose stock quote and watchlist APIs. From their descriptions they overlap significantly, though Fusion Finance's spec wasn't retrievable. The descriptions are nearly identical: "Stock Quote and Watchlist APIs" vs "Stock Quote and Stock Watchlist API." This is worth investigating to see if they point to different backends or are truly redundant.
+
+---
+
+###### 🟠 Partial Overlaps
+
+**Image content moderation** — spread across two products:
+
+| Product | API | Relevant Endpoints |
+|---|---|---|
+| **Image Recognition** (`rekognition`) | `rekognition` | `POST /detectmoderationlabels`, `POST /detectlabels`, `POST /detecttext`, `POST /detectppe` |
+| **Image Recognition** (`sightengine`) | `sightengine` | `POST /imagemoderation`, `POST /aiimagedetection`, `POST /imageredaction` |
+| **Facial Recognition** | `facedetection` | `POST /detectface`, `POST /indexface`, `POST /searchface`, etc. |
+
+Both `rekognition` and `sightengine` under **Image Recognition** offer image moderation (`/detectmoderationlabels` vs `/imagemoderation`). They use different backends (AWS Rekognition vs Sightengine), so they're not duplicates, but a consumer might be confused about which to use for content moderation.
+
+**Text detection overlap** — `rekognition`'s `POST /detecttext` (extracts text from images) overlaps conceptually with the **NLP** product's `comprehend` text analysis APIs, though they operate on different input types (images vs raw text).
+
+---
+
+###### Summary & Recommendations
+
+| Issue | Severity | Recommendation |
+|---|---|---|
+| `Translate` API duplicated in **NLP** and **Translate** products | 🔴 High | Remove the `translate` API from the NLP bundle, or consolidate into one product |
+| **Finance Starter** and **Fusion Finance** appear functionally identical | 🟡 Medium | Retrieve Fusion Finance spec to confirm — if same, consolidate or differentiate clearly |
+| Image moderation split between `rekognition` and `sightengine` | 🟠 Low | Add documentation distinguishing use cases (e.g., Sightengine for richer moderation models, Rekognition for AWS-native) |
+
+
 #### Updating Product Documentation
 
 | Prompt | Tool Used |
